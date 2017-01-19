@@ -9,7 +9,7 @@ $(document).ready(function() {
   var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
     var stickyHeight = sticky.outerHeight();
     var stickyTop = stickyWrapper.position().top;
-    if (scrollElement.scrollTop() >= stickyTop) {
+    if (scrollElement.scrollTop() > stickyTop) {
       stickyWrapper.height(stickyHeight);
       sticky.addClass("is-sticky");
     } else {
