@@ -286,7 +286,7 @@ header::before {
     z-index: -1;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/imagine-bg2.png');
-    background-position: center center;
+    background-position: fixed;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -672,7 +672,7 @@ section#about::before {
     z-index: -1;
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/imagine-bg3.png');
-    background-position: center;
+    background-position: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
