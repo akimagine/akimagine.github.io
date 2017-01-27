@@ -656,11 +656,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    position: relative;
-    background-color: #222;
-}
-
 section#about {
     position: relative;
     color: #fff;
@@ -686,8 +681,9 @@ section#about::before {
 }
 
 section#contact {
-    color: #fff;
+    position: relative;
 }
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
