@@ -26,7 +26,7 @@ $(document).ready(function() {
     sticky.addClass('sticky');
     
     // Scroll & resize events
-    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll touchmove', function() {
       stickyToggle(sticky, stickyWrapper, $(this));
     });
     

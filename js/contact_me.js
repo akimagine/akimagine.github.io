@@ -1,5 +1,4 @@
 $(function() {
-
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -8,23 +7,27 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
+            var target = $("input[name=target]").val();
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            var gotcha = $("input[name=_gotcha]").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
-                url: "../mail/contact_me.php",
+                url: "https://formspree.io/" + target, 
                 type: "POST",
+                dataType: "json",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
-                    message: message
+                    message: phone + ' ' + message,
+                    _gotcha: gotcha
                 },
                 cache: false,
                 success: function() {
