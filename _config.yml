@@ -2,14 +2,12 @@
 company: AK Imagine Inc.
 title: AK Imagine | Powered By Your Imagination
 email: sales@akimagine.com
-description: "Powered by your imagination."
+description: "Powered by your imagination. AK Imagine"
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/AKImagineInc
-  - title: github
-    url: http://github.com/akimagine
 
 # Postal address (add as many lines as necessary)
 address:
